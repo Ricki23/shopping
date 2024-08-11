@@ -20,7 +20,7 @@ const ShopContextProvider = (props) =>
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         if(localStorage.getItem('auth-token'))
         {
-            fetch('https://shopping-eosin-five.vercel.app/addtocart',{
+            fetch('http://localhost:4000/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
