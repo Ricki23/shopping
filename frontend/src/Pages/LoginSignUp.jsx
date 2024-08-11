@@ -19,7 +19,7 @@ const LoginSignUp =()=>
    const login = async () =>{
     console.log("Login Function Executed",formData);
     let responseData;
-    await fetch('https://shopping-eosin-five.vercel.app/signup',{
+    await fetch('https://localhost:4000/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
